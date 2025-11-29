@@ -1,0 +1,49 @@
+#heading1 {
+  color: rgb(0, 0, 255);
+  background-color: #ff0000;
+}
+
+h1 {
+  color: rgb(255, 0, 0);
+  background-color: #00ff00;
+}
+.heading1 {
+  color: rgb(0, 255, 0);
+  background-color: brown;
+}
+
+.container {
+  width: 100px;
+  height: 100px;
+  background-image: radial-gradient(red, yellow, green, purple, white);
+}
+
+.container2 {
+  width: 100px;
+  height: 100px;
+  background-image: linear-gradient(red, yellow, green, purple, white);
+}
+.container-size {
+  width: 100%;
+  height: 100px;
+}
+.container3 {
+  background-color: red;
+}
+.container4 {
+  background-color: green;
+}
+.container5 {
+  background-color: blue;
+}
+.container6 {
+  background-color: purple;
+}
+
+.para {
+  color: white;
+}
+
+.para-bg {
+  background-color: black;
+}

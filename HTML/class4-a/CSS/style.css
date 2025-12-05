@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.container {
+  width: 100px;
+  height: 100px;
+  /* background-color: rgba(255, 0, 0, 0.5); */
+  /* background-image: linear-gradient(
+    to right,
+    red,
+    yellow,
+    green,
+    purple,
+    white
+  ); */
+  /* background-image: radial-gradient(red, yellow, green, purple, white); */
+  /* background-image: conic-gradient(red, yellow, green, purple, aqua); */
+}
+
+/* body {
+  background-color: white;
+} */
+.para {
+  color: black;
+  /* background-image: linear-gradient(to right, red, yellow, green, purple, aqua); */
+  /* text-align: left;
+  text-align: right;
+  text-align: center;
+  text-align: justify; */
+  font-weight: 600;
+  font-family: "Montserrat", "Times New Roman";
+  font-size: 16px;
+  font-style: italic;
+  /* text-decoration: line-through;
+  text-decoration: underline;
+  text-decoration: overline; */
+  /* text-decoration: underline overline line-through; */
+  /* text-decoration: underline; */
+  /* text-decoration-style: double;
+  text-decoration-style: solid;
+  text-decoration-style: dotted;
+  text-decoration-style: double; */
+  /* text-decoration-style: wavy;
+  text-decoration-color: navy;
+  text-decoration-thickness: 1px; */
+  /* text-decoration: double underline 1px red; */
+  /* text-transform: capitalize; */
+}
+.parag1 {
+  font-family: "Montserrat", "Times New Roman";
+  font-weight: 100;
+}
+.parag2 {
+  font-family: "Montserrat", "Times New Roman";
+  font-weight: 200;
+}
+.parag3 {
+  font-family: "Montserrat", "Times New Roman";
+  font-weight: 300;
+}
+.parag4 {
+  font-family: "Montserrat", "Times New Roman";
+  font-weight: 400;
+}
+.parag5 {
+  font-family: "Montserrat", "Times New Roman";
+  font-weight: 500;
+}
+.parag6 {
+  font-family: "Montserrat", "Times New Roman";
+  font-weight: 600;
+}
+.parag7 {
+  font-family: "Montserrat", "Times New Roman";
+  font-weight: 700;
+}
+.parag8 {
+  font-family: "Montserrat", "Times New Roman";
+  font-weight: 800;
+}
+.parag9 {
+  font-family: "Montserrat", "Times New Roman";
+  font-weight: 900;
+}

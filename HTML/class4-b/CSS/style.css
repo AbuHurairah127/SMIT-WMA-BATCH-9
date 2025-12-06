@@ -1,0 +1,68 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+.heading {
+  color: red;
+  /* background-color: blue; */
+  border: 2px solid yellow;
+  /* padding: 5px; */
+  /* padding: y-axis x-axis; */
+  /* padding: 5px 20px; */
+  /* padding:top right bottom left; */
+  /* padding: 5px 20px 25px 40px; */
+  /* margin: 10px; */
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.container {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  /* border-width: 5px;
+  border-style: solid; */
+  /* border-style: double; */
+  /* border-style: dashed; */
+  /* border-style: dotted; */
+  /* border-style: groove; */
+  /* border-style: ridge; */
+  /* border-style: inset; */
+  /* border-style: outset; */
+  /* border-color: green; */
+  border: 3px solid pink;
+  overflow: hidden;
+  transition-property: all;
+  transition-duration: 5s;
+}
+.container:hover {
+  border-radius: 50%;
+}
+.btn {
+  background-color: #ea4c89;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 20px;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 3s;
+  /* transition-delay: 5s; */
+}
+
+.transition-1 {
+  transition-timing-function: cubic-bezier(0, 1.09, 1, 0.75);
+}
+.transition-2 {
+  transition-timing-function: ease-in-out;
+}
+
+.btn:hover {
+  background-color: black;
+  color: red;
+  /* width: 500px; */
+  border-radius: 20px;
+}

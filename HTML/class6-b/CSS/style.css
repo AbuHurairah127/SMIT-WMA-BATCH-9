@@ -1,0 +1,23 @@
+.box {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ff3a20;
+  animation-name: box-animation;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  /* animation-direction: forward; */
+  /* animation-direction: reverse; */
+  animation-direction: alternate;
+}
+
+@keyframes box-animation {
+  0% {
+    scale: 0;
+    /* opacity: 1; */
+  }
+  100% {
+    scale: 1.5;
+    /* opacity: 0.1; */
+  }
+}

@@ -1,23 +1,53 @@
 .box {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #ff3a20;
-  animation-name: box-animation;
-  animation-duration: 1.5s;
+  width: 100px;
+  height: 100px;
+  /* border-radius: 50%; */
+  background-color: red;
+  /* animation-name: box-animation; */
+  animation-duration: 5s;
   animation-iteration-count: infinite;
   /* animation-direction: forward; */
   /* animation-direction: reverse; */
-  animation-direction: alternate;
+  /* animation-direction: alternate; */
 }
+
+/* @keyframes box-animation {
+  0% {
+    background-color: red;
+    scale: 1;
+  }
+  25% {
+    background-color: yellow;
+    scale: 2.5;
+    border: 2px solid blue;
+    transform: rotate(75deg);
+  }
+  90% {
+    background-color: yellow;
+    scale: 1.5;
+    border: none;
+  }
+  100% {
+    background-color: green;
+    scale: 2;
+  }
+} */
 
 @keyframes box-animation {
   0% {
+    background-color: red;
+    scale: 1;
+  }
+  50% {
+    scale: 1;
+  }
+  60% {
     scale: 0;
-    /* opacity: 1; */
+  }
+  90% {
+    scale: 0;
   }
   100% {
-    scale: 1.5;
-    /* opacity: 0.1; */
+    scale: 1;
   }
 }

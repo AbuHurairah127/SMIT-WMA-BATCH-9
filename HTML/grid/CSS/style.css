@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* fr = fraction */
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* width: 400px; */
+  gap: 20px;
+}
+
+.item1 {
+  background-color: red;
+  /* height: 200px; */
+  /* grid-column: 1 / 3; */
+  grid-row: 1 / 4;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.item2 {
+  background-color: blue;
+  height: 200px;
+}
+.item3 {
+  background-color: green;
+  height: 200px;
+}
+.item4 {
+  background-color: yellow;
+  height: 200px;
+}
+
+.item1-1 {
+  background-color: yellow;
+  height: 100px;
+}
+.item1-2 {
+  background-color: blue;
+  height: 100px;
+}
+.item1-3 {
+  background-color: green;
+  height: 100px;
+}

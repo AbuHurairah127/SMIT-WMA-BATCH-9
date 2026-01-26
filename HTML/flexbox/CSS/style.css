@@ -36,21 +36,27 @@
   width: 100px;
   height: 100px;
   background-color: rgba(0, 0, 255, 1);
+  flex-shrink: 1;
 }
 .child2 {
   width: 100px;
   height: 100px;
   background-color: red;
+  flex-shrink: 1;
+  flex-grow: 1;
 }
 .child3 {
   width: 100px;
   height: 100px;
   background-color: green;
+  flex-shrink: 2;
+  flex-grow: 1.5;
 }
 .child4 {
   width: 100px;
   height: 100px;
-  background-color: yellow;
+  background-color: black;
+  flex-grow: 3;
 }
 
 nav {

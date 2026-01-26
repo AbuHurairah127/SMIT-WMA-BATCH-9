@@ -1,0 +1,31 @@
+.container2 {
+  display: grid;
+  /* gap: 20px; */
+  width: 100%;
+  height: 100%;
+  grid-template-areas:
+    "sidebar header header header header"
+    "sidebar main main main main"
+    "sidebar footer footer footer footer";
+}
+
+.header {
+  background-color: red;
+  grid-area: header;
+  height: 100px;
+}
+.sidebar {
+  background-color: blue;
+  grid-area: sidebar;
+  height: 700px;
+}
+.main {
+  background-color: green;
+  grid-area: main;
+  height: 500px;
+}
+.footer {
+  background-color: purple;
+  grid-area: footer;
+  height: 100px;
+}

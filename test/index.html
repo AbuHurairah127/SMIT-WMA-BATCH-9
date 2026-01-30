@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productivity Hub</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-logo">PH</div>
+          <div class="brand-text">
+            <h1>Productivity Hub</h1>
+            <p>Plan. Focus. Reflect.</p>
+          </div>
+        </div>
+        <nav class="nav">
+          <button class="nav-item active" data-section="today">
+            <span class="nav-icon">📅</span>
+            <span>Today</span>
+          </button>
+          <button class="nav-item" data-section="tasks">
+            <span class="nav-icon">✅</span>
+            <span>Tasks</span>
+          </button>
+          <button class="nav-item" data-section="notes">
+            <span class="nav-icon">📝</span>
+            <span>Notes</span>
+          </button>
+          <button class="nav-item" data-section="stats">
+            <span class="nav-icon">📊</span>
+            <span>Stats</span>
+          </button>
+        </nav>
+        <footer class="sidebar-footer">
+          <div class="user">
+            <div class="avatar">U</div>
+            <div>
+              <p class="user-name">You</p>
+              <p class="user-role">Stay consistent ✨</p>
+            </div>
+          </div>
+        </footer>
+      </aside>
+
+      <main class="main">
+        <header class="main-header">
+          <div>
+            <h2 id="section-title">Today Overview</h2>
+            <p class="subtitle" id="section-subtitle">
+              Capture your tasks, notes, and focus for today.
+            </p>
+          </div>
+          <div class="datetime">
+            <p id="current-date"></p>
+            <p id="current-time"></p>
+          </div>
+        </header>
+
+        <section class="section" id="section-today">
+          <div class="grid-2">
+            <div class="card">
+              <div class="card-header">
+                <h3>Quick Tasks</h3>
+                <span class="pill" id="tasks-summary">0 done • 0 total</span>
+              </div>
+              <form id="quick-task-form" class="inline-form">
+                <input
+                  type="text"
+                  id="quick-task-input"
+                  placeholder="Add a quick task and press Enter..."
+                  autocomplete="off"
+                />
+              </form>
+              <ul class="task-list" id="today-task-list"></ul>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h3>Focus Timer</h3>
+                <span class="pill pill-soft">25 min focus</span>
+              </div>
+              <div class="timer">
+                <div class="timer-display" id="timer-display">25:00</div>
+                <div class="timer-controls">
+                  <button id="timer-start" class="btn primary">Start</button>
+                  <button id="timer-pause" class="btn">Pause</button>
+                  <button id="timer-reset" class="btn ghost">Reset</button>
+                </div>
+              </div>
+              <p class="helper">
+                Use the Pomodoro technique: 25 minutes of deep work, then a 5
+                minute break.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section hidden" id="section-tasks">
+          <div class="card full">
+            <div class="card-header">
+              <h3>Task Manager</h3>
+              <div class="filters">
+                <button class="chip active" data-filter="all">All</button>
+                <button class="chip" data-filter="active">Active</button>
+                <button class="chip" data-filter="completed">Completed</button>
+              </div>
+            </div>
+
+            <form id="task-form" class="task-form">
+              <input
+                type="text"
+                id="task-title"
+                placeholder="Task title"
+                required
+              />
+              <select id="task-priority">
+                <option value="low">Low priority</option>
+                <option value="medium" selected>Medium priority</option>
+                <option value="high">High priority</option>
+              </select>
+              <input type="date" id="task-due" />
+              <button type="submit" class="btn primary">Add Task</button>
+            </form>
+
+            <ul class="task-list detailed" id="task-list"></ul>
+          </div>
+        </section>
+
+        <section class="section hidden" id="section-notes">
+          <div class="grid-2">
+            <div class="card">
+              <div class="card-header">
+                <h3>Notes</h3>
+                <span class="pill" id="notes-count">0 notes</span>
+              </div>
+              <form id="note-form" class="note-form">
+                <input
+                  type="text"
+                  id="note-title"
+                  placeholder="Note title"
+                  required
+                />
+                <textarea
+                  id="note-body"
+                  rows="4"
+                  placeholder="Write your thoughts..."
+                ></textarea>
+                <button type="submit" class="btn primary">Save Note</button>
+              </form>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h3>Saved Notes</h3>
+              </div>
+              <ul class="note-list" id="note-list"></ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section hidden" id="section-stats">
+          <div class="grid-2">
+            <div class="card">
+              <div class="card-header">
+                <h3>Today’s Progress</h3>
+              </div>
+              <div class="stats">
+                <div class="stat">
+                  <p class="stat-label">Tasks completed</p>
+                  <p class="stat-value" id="stat-tasks-completed">0</p>
+                </div>
+                <div class="stat">
+                  <p class="stat-label">Tasks remaining</p>
+                  <p class="stat-value" id="stat-tasks-remaining">0</p>
+                </div>
+                <div class="stat">
+                  <p class="stat-label">Focus sessions</p>
+                  <p class="stat-value" id="stat-focus-sessions">0</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h3>Reflection</h3>
+              </div>
+              <textarea
+                id="reflection-input"
+                class="reflection-input"
+                rows="6"
+                placeholder="Write a short reflection about your day..."
+              ></textarea>
+              <button id="save-reflection" class="btn primary">
+                Save Reflection
+              </button>
+              <p class="helper" id="reflection-status"></p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

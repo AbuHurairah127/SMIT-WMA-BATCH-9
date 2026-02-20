@@ -1,0 +1,16 @@
+console.log("Hello World");
+console.log("Hello World 2nd time");
+var myName = "Abu Hurairah";
+console.log("myName");
+console.log(myName);
+var age = 23;
+var myEmail = "learnwithabuhurairah@gmail.com";
+var myEmail = 'learnwithabuhurairah@gmail.com';
+var sentence = 'Quaid-e-Azam said, "work,work and work"';
+var apos = "Abu Hurairah's pen";
+var all = "Quaid-e-Azam said,\"work,work and work\" written by Abu Hurairah's pen.";
+var username = "abuhurairah127";
+var sent = "Welcome back ".concat(username);
+var sum = "2 + 2 = ".concat(2 + 2);
+console.log(sum);
+console.log(sent);

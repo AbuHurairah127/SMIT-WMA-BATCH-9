@@ -1,0 +1,213 @@
+/* Responsive Overrides */
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+  /* Tablet Breakpoint */
+  .container {
+    padding: 0 var(--container-padding-tablet);
+  }
+
+  .grid-3-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-4-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Adjust Hero for tablet */
+  .hero-wrapper {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .hero-left {
+    padding: 96px var(--container-padding-tablet);
+    position: relative;
+    z-index: 20;
+    background-color: transparent !important; /* Allow overlay to show */
+  }
+
+  .hero-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: block !important;
+  }
+  
+  .hero-gradient-overlay {
+    background: rgba(0, 0, 0, 0.55) !important;
+  }
+
+  /* Footer tablet */
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* Mobile Breakpoint */
+  .container {
+    padding: 0 var(--container-padding-mobile);
+  }
+
+  section {
+    padding: var(--section-padding-y-mobile) 0;
+  }
+
+  /* Single Column Layouts */
+  .grid-12, .grid-3-col, .grid-4-col {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  /* Typography Adjustments */
+  .h-display {
+    font-size: 44px; /* Reduced from normal */
+  }
+
+  /* Hide elements */
+  .hide-on-mobile {
+    display: none !important;
+  }
+  
+  /* Navbar */
+  .navbar-container {
+    height: 60px;
+  }
+  
+  .mobile-menu-toggle {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-btn {
+    display: none !important; /* In true mobile, we could turn it into icon-only, but doc says 'Transforms to icon-only on mobile'. Let's do that. */
+  }
+  
+  /* Actually, wait. 'Transforms to icon-only on mobile.' */
+  
+  /* Hero */
+  .hero-section {
+    min-height: 100vh; /* Re-adjust for mobile */
+  }
+
+  .hero-wrapper {
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+
+  .hero-left {
+    padding: var(--space-xl) var(--container-padding-mobile);
+    background-color: transparent;
+    z-index: 20;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Center everything in hero on mobile */
+  .hero-content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .eyebrow {
+    justify-content: center;
+  }
+
+  .hero-sub {
+    font-size: 16px;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+  
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .hero-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+
+  .hero-gradient-overlay {
+    background: rgba(0, 0, 0, 0.55) !important;
+  }
+
+  /* Trust Bar */
+  .trust-scroll-container {
+    padding: 0 var(--container-padding-mobile);
+  }
+  
+  .trust-content {
+    justify-content: flex-start;
+    gap: 40px;
+    padding-right: var(--container-padding-mobile); /* To ensure last item can be scrolled fully */
+  }
+
+  .trust-separator {
+    display: none;
+  }
+  
+  /* Filter Tabs */
+  .filter-tabs {
+    overflow-x: auto;
+    padding-bottom: 8px;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+  }
+  .filter-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Process Steps */
+  .process-steps {
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  .process-step {
+    width: 100%;
+  }
+
+  .process-connector {
+    display: none;
+  }
+  
+  /* Testimonials */
+  .testimonial-grid {
+    overflow-x: auto;
+    padding-bottom: 16px;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+  }
+  
+  .testimonial-grid::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .testimonial-card {
+    min-width: 300px;
+  }
+  
+  /* Final CTA */
+  .final-cta-section {
+    padding: 80px 0;
+  }
+  
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

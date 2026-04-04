@@ -1,0 +1,52 @@
+:root {
+  /* Colors */
+  --color-black:      #1C1C1A;
+  --color-amber:      #C17F4A;
+  --color-amber-dark: #A86E3C;
+  --color-cream:      #F5EFE6;
+  --color-beige:      #E8DDD0;
+  --color-gray:       #6B6B67;
+  --color-light:      #F0EDEA;
+  --color-white:      #FFFFFF;
+  --color-error:      #E05252;
+  
+  /* Footer Dark BG */
+  --color-footer-bg:  #111110;
+
+  /* Typography */
+  --font-display: 'Playfair Display', serif;
+  --font-body:    'Inter', sans-serif;
+
+  /* Spacing Base Unit (8px) */
+  --space-xs:  8px;
+  --space-sm:  16px;
+  --space-md:  24px;
+  --space-lg:  48px;
+  --space-xl:  96px;
+  
+  /* Additional section vertical paddings */
+  --section-padding-y-desktop: 96px;
+  --section-padding-y-mobile: 64px;
+
+  /* Horizontal Paddings */
+  --container-padding-desktop: 80px;
+  --container-padding-tablet: 40px;
+  --container-padding-mobile: 20px;
+
+  /* Borders & Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-input: 8px;
+  --border-light: 1px solid var(--color-beige);
+  --border-dark: 1px solid #333333;
+
+  /* Shadows (Used sparingly) */
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.07);
+
+  /* Transitions */
+  --transition: 300ms ease;
+  --transition-fast: 200ms ease;
+
+  /* Layout */
+  --max-width: 1280px;
+}

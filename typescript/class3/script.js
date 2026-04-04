@@ -1,3 +1,4 @@
+"use strict";
 // comparison Operators
 // == , === , <,>,<=,>=,!=,!==
 // a = b
@@ -168,5 +169,19 @@ var str1 = "Hello";
 var str2 = "Hello";
 var resp2 = str1 == str2;
 console.log("🚀 ~ resp2:", resp2);
-var ADMIN = "admin";
-var USER = "user";
+var emailInDB = "test@gmail.com";
+var passwordInDB = "123456";
+var email = "test@gmail.com";
+var password = "123456";
+if (emailInDB === email && passwordInDB === password) {
+    console.log("Login successful");
+}
+else if (emailInDB !== email) {
+    console.log("Email is incorrect");
+}
+else if (passwordInDB !== password) {
+    console.log("Password is incorrect");
+}
+else {
+    console.log("Login failed");
+}

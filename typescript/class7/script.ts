@@ -144,3 +144,10 @@ for(var start = 0; start < nums2.length;){
     }
 }
 console.log(nums2)
+
+
+
+
+
+
+

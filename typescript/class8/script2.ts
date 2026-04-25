@@ -113,13 +113,13 @@
 
     // var arr3 = [9,78,55,88,88,77,45,12,21,23,52,52,45,55,5,55,55,74,48,89,56]
     // var check = (num:number,ind:number):string => {
-    //     function numEvenOdd(num:number):string{
-    //         if(num % 2 ===0){
-    //             return "even"
-    //         }else{
-    //             return "odd"
-    //         }
-    //     }
+        function numEvenOdd(num:number):string{
+            if(num % 2 ===0){
+                return "even"
+            }else{
+                return "odd"
+            }
+        }
     //    if(ind % 2 ===0){
     //     return `${numEvenOdd(num)} num at even index`
     //    }else{
@@ -128,6 +128,7 @@
     // }
     // var outputArr3 = arr3.map(check)
     // console.log("🚀 ~ outputArr3:", outputArr3)
+
 
 
 

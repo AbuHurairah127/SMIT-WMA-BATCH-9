@@ -47,5 +47,5 @@
 
 // document.getElementsByTagName("h1")[0].innerText="My World"
 // document.getElementById("heading")!.style.backgroundColor="red"
-document.getElementsByTagName("body")[0].innerText = "<h1 style='color: red;background-color:green'>Hello World from ts</h1>"
-document.write("Hello World from Typescript, hello html")
+// document.getElementsByTagName("body")[0].innerText = "<h1 style='color: red;background-color:green'>Hello World from ts</h1>"
+// document.write("Hello World from Typescript, hello html")
